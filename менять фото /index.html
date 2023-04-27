@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<!-- <body onload="go()"> -->
+    
+
+
+<!-- <div>
+    <img id="img" src="picture/1.png" alt="">
+</div> -->
+
+
+ 
+
+    <div>
+        <img id="img1" src="picture/1.png" alt="">
+        <img id="img2" src="picture/2.png" alt="">
+        <img id="img3" src="picture/3.png" alt="">
+        <input onclick="go()" type="submit" name="" id="go">
+    </div> 
+
+
+    <script src="js.js">
+
+        
+
+
+
+// function go(){
+//     window.timerID=window.setInterval(timer ,1000);
+//     document.getElementById("go").disabled=true;
+// }
+// function timer(){
+//     let img1=document.getElementById("img1");
+//     let img2=document.getElementById("img2");
+//     let img3=document.getElementById("img3");
+//     let all=img1.src;
+//     img1.src=img2.src;
+//     img2.src=img3.src;
+//     img3.src=all;
+// }
+
+function go(){
+    window.timerId=window.setInterval(timer,1000);
+    document.getElementById("go").disabled=true;
+}
+function timer(){
+    let img1 = document.getElementById("img1");
+    let img2 = document.getElementById("img2");
+    let img3 = document.getElementById("img3");
+    let all=img1.src;
+    
+    img1.src=img2.src;
+    img2.src=img3.src;
+    img3.src=all;
+}
+
+
+
+
+    </script>
+</body>
+</html>
